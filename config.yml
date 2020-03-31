@@ -1,0 +1,43 @@
+# Configs da GUI - /vender
+gui:
+  titulo_gui: '&8Vender: &7Menu' #T?ulo do 'invent?io'
+  #itens:
+  titulo_bolsa: '&eBolsa de valores' #titulo do item da bolsa
+  lore_bolsa: # lore do item da bolsa
+    - ''
+    - '&7A bolsa de valores está em: &f<valor_bolsa>%'
+  titulo_shift: '&eVenda por shift' # titulo do item da venda por shift
+  lore_shift:
+    - ''
+    - '&7Sua venda por shift está: &f<shift_bool>'
+    - ''
+    - '&8Vende todos seus itens disponíveis ao apertar shift'
+  titulo_auto: '&eVenda Automática' # titulo do item da venda por shift
+  lore_auto:
+    - ''
+    - '&7Sua venda automática está: &f<auto_bool>'
+    - ''
+    - '&8Vende todos seus itens disponíveis automáticamente'
+mensagens:
+  mensagem_bolsa_alterada: # mensagem que aparece a todos quando a bolsa é alterada
+    - ''
+    - '&aA bolsa foi alterada para <valor_bolsa>%'
+    - ''
+  mensagem_bolsa_alterada_por_player: # mensagem que aparece quando um player altera a bolsa
+    - ''
+    - '&aA bolsa de valores foi alterada pelo jogador: &f<player>'
+    - '&aNovo valor da bolsa: <valor_bolsa>%'
+    - ''
+  mensagem_bolsa_comando: # mensagem que aparece quando dá o comando /bolsa
+    - ''
+    - '&7Valor da bolsa atual: &7<valor_bolsa>%'
+    - ''
+  ativar_venda_shift: '&7Você ativou o modo: &aVenda por shift' # mensagem quando ativa o modo shift
+  ativar_venda_auto: '&7Você ativou o modo: &aVenda automática' # mensagem quando ativa o modo automático
+  modo_de_venda_desativado: '&cModo de venda desativado' # mensagem quando desativa os modos de venda
+  sem_itens: '&cSem itens disponíveis para venda' # mensagem quando não tem nenhum item disponível para venda
+configs:
+  tempo_venda_auto: 5 # tempo que vai ficar vendendo os itens em loop na venda automática (Em segundos)
+  tempo_troca_bolsa: 240 # tempo que vai atualizar o valor da bolsa de valores (Em segundos)
+itens: # para criar um item é 'id_do_item;data_do_item;valor_de_venda' # o valor de venda é unitário e é o valor que é vendido quando a bolsa estiver em 100%
+  - '20;0;12'

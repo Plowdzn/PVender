@@ -1,0 +1,8 @@
+name: PVender
+main: me.ploow.Main
+version: 1.0
+commands:
+  vender:
+    description: Comando principal de venda
+  bolsa:
+    description: Comando principal da bolsa
